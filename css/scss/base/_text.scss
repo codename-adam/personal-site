@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #TEXT
+\*------------------------------------*/
+
+body {
+	font-family: $font-family-primary;
+	margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/**
+ * Paragraph base styles
+ */
+p {
+  @include typographyBody();
+  margin-bottom: 24px;
+  + p {
+    margin-bottom: 24px;
+  }
+  a {
+    // color: var(--color-primary-gray-dark);
+    text-decoration: underline;
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-primary-dark-gray);
+    transition: all .25s ease-in-out;
+    &:hover {
+      color: var(--color-primary-teal);
+      svg path {
+        fill: currentColor;
+      }
+    }
+  }
+}
+
+/*------------------------------------*\
+    #FORM CONTEROLS
+\*------------------------------------*/
+
+label {
+	@include formControlLabel();
+}
+
+input,
+textarea { @include formControlInput(); }
+textarea {}
+
+main h1 {
+	margin-bottom: 40px;
+} 
+

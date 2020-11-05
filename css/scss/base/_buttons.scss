@@ -1,0 +1,48 @@
+a[download],
+button[type=submit] { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  background-color: var(--color-primary-yellow);
+  border: 0;
+  border-radius: $border-radius-lg;
+  padding: 16px 24px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-primary-dark-gray);
+  width: 300px;
+  height: 60px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    left:0;
+    top: 0;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(darken(#FFE66D, 15), .5);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: rgba(darken(#FFE66D, 15), 1);;
+    // border: 3px solid var(--color-primary-yellow);
+     &::after {
+      opacity: 1;
+    }
+  }
+}
+
+
+button[type=submit] {
+	width: 100% ;
+}

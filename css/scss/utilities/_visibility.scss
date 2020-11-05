@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    #VISIBILITY CLASSES
+\*------------------------------------*/
+
+/**
+ * Is Hidden
+ * 1) Completely remove from the flow and screen readers.
+ */
+.u-is-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/**
+ * Is Visibly Hidden
+ * 1) Completely remove from the flow but leave available to screen readers.
+ */
+.u-is-vishidden {
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    &:focus {
+      color: var(--color-primary-dark-gray);
+      display: inline-block;
+      height: auto;
+      width: auto;
+      position: static;
+      margin: auto;
+  }
+}
+
+
+.u-screenreader-text {
+  position: absolute;
+  left: -999px;
+  width:1px;
+  height: 1px;
+  top: auto;
+
+  &:focus {
+    color: var(--color-primary-dark-gray);
+    display: inline-block;
+    height: auto;
+    width: auto;
+    left: 2rem;
+    top: 2rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    margin: auto;
+  }
+}

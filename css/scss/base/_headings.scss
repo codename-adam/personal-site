@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Heading 1 base styles
+ */
+h1,
+.alpha {
+	@include typographyHeadingXl();
+}
+
+/**
+ * Heading 2 base styles
+ */
+h2,
+.beta {
+	@include typographyHeadingLarge();
+}
+
+/**
+ * Heading 3 base styles
+ */
+h3,
+.gamma {
+	@include typographyHeadingMed();
+}
+
+/**
+ * Heading 4 base styles
+ */
+h4,
+.delta {
+	@include typographyHeadingMed();
+}
+
+h5,
+.epsilon {
+	font-size: 1rem;
+}
+
+h6,
+.zeta {
+	font-size: 1rem;
+}
+
+/*------------------------------------*\
+    #FORM CONTEROLS
+\*------------------------------------*/
+
+label {
+	@include formControlLabel();
+}

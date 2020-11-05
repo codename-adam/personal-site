@@ -1,0 +1,44 @@
+/*
+
+  Contact Page Styles
+
+*/
+.contact {
+  .right-col {
+    padding-bottom: 5rem;
+    p:nth-of-type(1) {
+      // color: red;
+    }
+    ul {
+      padding: .5rem 0;
+      li {
+        padding-bottom: 12px;
+      }
+      a {
+        // color: var(--color-primary-gray-dark);
+        text-decoration: underline;
+        display: inline-flex;
+        align-items: center;
+        color: var(--color-primary-dark-gray);
+        transition: all .25s ease-in-out;
+              
+        &:visited {
+          color: inherit;
+        }
+        &:hover {
+          color: var(--color-primary-teal);
+          svg path {
+            fill: currentColor;
+          }
+        }
+      }
+      svg {
+        margin: 0 8px 0 0;
+      }
+    }
+    p:nth-of-type(2) {
+      // color: red;
+    }
+  }
+}
+

@@ -1,0 +1,25 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Professionl website",
+  "main": "index.js",
+  "author": "Adam Keller",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "server": "http-server -s",
+    "scss": "node-sass --w css/style.scss --output css",
+    "start": "node php-server.js",
+    "autoprefixer": "postcss -u autoprefixer -r css/*.css"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "node-sass": "^4.14.1",
+    "php-server": "^0.2.1",
+    "server": "^1.0.30"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2"
+  }
+}

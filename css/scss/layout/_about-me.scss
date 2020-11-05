@@ -1,0 +1,17 @@
+.c-about-me {
+  .images {
+    width: 100%;
+    display: flex;
+    margin-bottom: 16px;
+    img {
+      // width: 50%;
+      float: left;
+      padding: 0 16px 24px 16px;
+    }
+  }
+}
+.c-feature-list {
+  h2 {
+    @include headerSmallUpper();
+  }
+}

@@ -1,0 +1,55 @@
+.c-intro {
+ > div {
+    font-size: $font-size-md;
+    font-weight: $font-weight-heavy;
+    letter-spacing: .25px;
+    padding-bottom: 8px;
+  }
+
+  h2 {
+    font-size: $font-size-super;
+    font-weight: $font-weight-heavy;
+    padding-bottom: $spacing-xl;
+  }
+
+  h3 {
+    font-size: $font-size-md;
+    font-weight: $font-weight-light;
+    padding-bottom: $spacing-xl;
+  }
+
+  p { 
+    margin: 0 0 24px 0;
+    @media screen and (min-width: 34em) {
+      margin:0 0 48px 0; 
+    }
+  }
+
+  a {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-heavy;
+    color: var(--color-primary-dark-gray);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    svg {
+      transform: translate(0, 0);
+      transition: all $anim-fade-quick $anim-ease;
+    }
+    &:hover {
+      color: var(--color-primary-teal);
+      svg {
+        transform: translate($spacing, 0);
+        path {
+          fill: var(--color-primary-teal);
+        }
+      }
+    }
+    svg { margin-left: $spacing; }
+  }
+}
+
+.highlight {
+  background-color: var(--color-primary-yellow);
+  padding: 0 4px 0 4px;
+}

@@ -1,0 +1,107 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
+/**
+ * Body Styles 
+ * 1) Prevent Mobile Safari from scaling up text: https://blog.55minutes.com/2012/04/iphone-text-resizing/
+ */
+@mixin typographyBody() {
+	font-size: $font-size-sm;
+	font-weight: $font-weight-light;
+	line-height: 1.7;
+	-webkit-text-size-adjust: 100%; /* 1 */
+}
+
+/**
+ * XL Type Styles
+ */
+@mixin typographyBodyLarge() {
+	font-size: $font-size-lg;
+	line-height: $line-height-large;
+}
+
+/**
+ * XL Heading Styles
+ */
+@mixin typographyHeadingXl() {
+	font-size: $font-size-xxl;
+	font-weight: $font-weight-heavy;
+	line-height: 1.2;
+	color: var(--color-primary-dark-grey);
+	margin-bottom: 48px;
+}
+
+/**
+ * Large Heading Styles
+ */
+@mixin typographyHeadingLarge() {
+	font-size: $font-size-xl;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+/**
+ * Medium 2 Heading Styles
+ */
+@mixin typographyHeadingMed2() {
+	font-size: $font-size-lg;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+/**
+ * Medium Heading Styles - h3
+ */
+@mixin typographyHeadingMed() {
+	font-size: $font-size-md;
+	font-weight: $font-weight-heavy;
+	line-height: 1.2;
+	margin-bottom: $spacing-xs;
+}
+
+@mixin headerSmallUpper() {
+	font-size: $font-size-xxs;
+	font-weight: $font-weight-light;
+	text-transform: uppercase;
+	color: #757575;
+	line-height: 1;
+	letter-spacing: 2px;
+	padding-bottom: 24px;
+}
+
+
+/*------------------------------------*\
+    #FORM CONTEROLS
+\*------------------------------------*/
+
+@mixin formControlLabel() {
+	font-size: $font-size-sm;
+	font-weight: $font-weight-heavy;
+  margin: 0 0 4px 0;
+  display: block;
+}
+
+@mixin formControlInput() {
+	font-family: $font-family-primary;
+	font-size: $font-size-xs;
+	font-weight: $font-weight-book;
+	color: var(--color-primary-dark-grey);
+}
+
+
+
+
+
+@mixin navSelection() {
+	border-radius: $border-radius-lg;
+  background-color: var(--color-primary-yellow);
+  color: currentColor;
+}
+
+@mixin navSelectionHover() {
+	@include navSelection();
+	transition: background-color $anim-fade-quick $anim-ease;
+}
+
+
